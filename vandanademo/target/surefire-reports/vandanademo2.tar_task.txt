@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: vandanademo2.tar_task
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 13.57 s <<< FAILURE! - in vandanademo2.tar_task
+vandanademo2.tar_task.test  Time elapsed: 3.132 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at vandanademo2.tar_task.test(tar_task.java:26)
+
+vandanademo2.tar_task.test2  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at vandanademo2.tar_task.test2(tar_task.java:33)
+
