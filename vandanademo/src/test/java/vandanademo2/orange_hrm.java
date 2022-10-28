@@ -19,6 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class orange_hrm {
 	public static String vandana= "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 	String fb="https://www.voot.com/";
+	public static String vandana2="https://www.instagram.com/";
 	WebDriver driver;
 	
 	@BeforeTest
@@ -161,20 +162,30 @@ public class orange_hrm {
 //   	act.sendKeys(ele,Keys.ENTER).click().build().perform();
 //   	 Thread.sleep(2000);
 }
-        @Test
+        @Test(priority = 1)
         public void windowhandle() throws InterruptedException {
         	driver.getWindowHandle();
         	//open  a new tab and switches to new tab in existing window
         //	driver.switchTo().newWindow(WindowType.TAB);
         	
-        	driver.switchTo().newWindow(WindowType.WINDOW);
+        	driver.switchTo().newWindow(WindowType.TAB);
         	
         	//for navigating to new tab
         	driver.navigate().to(fb);
         	driver.manage().window().maximize();
         	Thread.sleep(2000);
-        	driver.quit();
         	
+        	//navigating to second tab
+        	driver.switchTo().newWindow(WindowType.TAB);
+        	driver.navigate().to(vandana2);
+        	
+        	
+        	
+        	//close the window
+        	driver.close();
+        	//close the tab
+        	//driver.close();\
+        	driver.quit();
         	
         	
         	

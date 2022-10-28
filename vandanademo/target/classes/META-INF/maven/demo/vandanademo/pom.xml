@@ -33,7 +33,7 @@
         <version>3.0.0-M5</version>
         <configuration>
           <includes>
-            <include>**/*orange_hrm.java</include>
+            <include>**/*orange_class_task.java</include>
           </includes>
         </configuration>
       </plugin>
